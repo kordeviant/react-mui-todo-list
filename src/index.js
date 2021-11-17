@@ -1,16 +1,16 @@
+import TasksProvider from 'feature/tasks/TasksProvider';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MuiTheme } from 'theme';
-import App from './App';
+import Tasks from './feature/tasks/Tasks';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MuiTheme>
+    <TasksProvider>
 
-      <App />
-    </MuiTheme>
+      <Tasks />
+    </TasksProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
